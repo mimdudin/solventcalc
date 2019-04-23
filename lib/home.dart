@@ -20,7 +20,8 @@ class _HomeState extends State<Home> {
           children: <Widget>[
             Icon(LineAwesomeIcons.home),
             SizedBox(width: 10),
-            Container(margin: EdgeInsets.only(top: 4), child: Text('SolventCalc'))
+            Container(
+                margin: EdgeInsets.only(top: 4), child: Text('SolventCalc'))
           ],
         ),
       ),
@@ -28,7 +29,9 @@ class _HomeState extends State<Home> {
       hidden: true,
       initialChild: Container(
         child: const Center(
-          child: CircularProgressIndicator(),
+          child: CircularProgressIndicator(
+            valueColor: AlwaysStoppedAnimation<Color>(Color(0xff012348)),
+          ),
         ),
       ),
     );
