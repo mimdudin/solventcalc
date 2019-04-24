@@ -12,7 +12,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
-      url: 'http://solventcalc.com/',
+      url: 'http://solventcalc.com',
       appBar: new AppBar(
         backgroundColor: Color(0xff012348),
         title: Row(
